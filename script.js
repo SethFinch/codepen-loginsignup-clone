@@ -32,7 +32,7 @@ Reponse Objects:
 $('document').ready(function() {
 		//put code here
 
-		codepen.objects.user = {
+		codepen.objects.User = {
 			name:null,
 			email: null,
 			username: null,
@@ -58,11 +58,11 @@ $('document').ready(function() {
 		$('.signup-form').hide();
 
 	//bring the signup elemnets if you click signup, and hide the login elements
-	$(".sign-form-btn").click(function(){
+	$(".signup-form-btn").click(function(){
 		$(".login-form").hide();
 		$(".signup-form").show();
 		$(".login-form-btn").removeClass("active");
-		$(".sign-form-btn").addClass("active");
+		$(".signup-form-btn").addClass("active");
 	});
 
 	$(".login-form-btn").click(function(){
